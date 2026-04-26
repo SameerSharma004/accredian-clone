@@ -24,22 +24,43 @@ To get this project running locally, follow these steps:
    Open [http://localhost:3000](http://localhost:3000) in your browser to see the results.
 
 
-## Approach Taken
-
-- **Mobile-First Design**: Prioritized tactile, swipe-based interactivity for mobile users (horizontal snap carousels) while maintaining structured grid layouts for desktop.
-- **Component-Driven Development**: Built modular components (Navbar, Hero, LeadForm, etc.) to ensure the codebase is scalable and easy to maintain.
-- **High-Fidelity Aesthetics**: Leveraged Tailwind CSS 4 gradients, glassmorphism, and custom blur effects to create a premium, authoritative brand presence.
-- **Single-Page Navigation**: Implemented a seamless anchor-based system with CSS smooth scrolling and precise header offsets for an intuitive user journey.
-
 ## AI Usage
 
-### Where AI helped
-- **Core Scaffolding**: Rapidly generated initial component structures and responsive Tailwind skeletons.
-- **Complex UI Logic**: Assisted in developing the state-managed testimonial carousel and the infinite-loop marquee for partnerships.
-- **Visual Concepting**: Helped brainstorm the "Next-Gen" design system, including the CAT Framework and visual depth layers.
+AI tools were used as productivity accelerators and problem-solving assistants throughout the development process. The goal was not to rely on AI for full implementation, but to enhance efficiency while maintaining full control over architecture and code quality.
 
-### What I modified manually
-- **Fine-Tuned Spacing**: Manually adjusted vertical padding and margins (especially in the Accredian Edge and Hero sections) to achieve a compact, high-impact vertical rhythm.
-- **Brand Identity**: Enforced a specific high-impact subtitle style (uppercase, brand blue, wide tracking) that the AI initially generalized.
-- **Mobile Refinements**: Redesigned the partnership marquee into a stable grid for mobile to ensure brand legibility, which required manual layout overrides.
-- **Asset Integration**: Manually coordinated the placement and responsive switching of custom SVG infographics.
+### Tools Used
+- ChatGPT  
+- Claude  
+- Antigravity  
+
+### How AI Was Used
+
+#### 1. Architecture & Planning
+- ChatGPT and Claude were used to explore different approaches for structuring the project using Next.js App Router  
+- Helped in breaking down the landing page into reusable and scalable components  
+- Assisted in deciding folder structure and separation of concerns  
+
+#### 2. Component Development
+- Generated initial scaffolding for components such as Navbar, Hero, and Form  
+- Suggested reusable component patterns (buttons, section wrappers)  
+- Provided Tailwind CSS utility patterns for responsive design  
+
+#### 3. Code Optimization & Debugging 
+- Claude was used to refine code readability and suggest improvements  
+- Antigravity assisted in debugging UI issues and refining component behavior  
+
+#### 4. Responsiveness & UI Improvements
+- AI tools suggested responsive breakpoints and layout adjustments  
+- Helped refine spacing, alignment, and overall UI consistency  
+
+---
+
+### Manual Contributions
+
+- Designed and implemented the final component architecture  
+- Refactored AI-generated code to ensure reusability and maintainability  
+- Improved naming conventions and folder structure  
+- Customized business logic for form handling and API integration  
+- Ensured responsiveness across devices through manual testing and adjustments  
+
+---
