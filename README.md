@@ -8,8 +8,8 @@ To get this project running locally, follow these steps:
 
 1. **Clone the repository**:
    ```bash
-   git clone <your-repo-link>
-   cd accredian
+   git clone https://github.com/SameerSharma004/accredian-clone.git
+   cd accredian-clone
    ```
 
 2. **Install dependencies**:
