@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import TrackRecord from "@/components/TrackRecord";
 import AccredianEdge from "@/components/AccredianEdge";
@@ -19,6 +20,7 @@ export default function Home() {
 
   return (
     <main className=" flex flex-col min-h-screen">
+      <Navbar onEnquire={() => setIsLeadFormOpen(true)} />
       <Hero onEnquire={() => setIsLeadFormOpen(true)} />
       <TrackRecord />
       <Partnerships />

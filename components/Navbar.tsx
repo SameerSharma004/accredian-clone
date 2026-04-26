@@ -3,7 +3,11 @@
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
 
-const Navbar = () => {
+interface NavbarProps {
+  onEnquire?: () => void;
+}
+
+const Navbar = ({ onEnquire }: NavbarProps) => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
@@ -22,9 +26,9 @@ const Navbar = () => {
           <p className="text-xs md:text-sm font-medium tracking-tight">
             Navigate your ideal career path with Accredian
           </p>
-          <Link
-            href="/refer"
-            className="text-[#1A73E8] text-xs md:text-sm font-bold hover:underline underline-offset-4 decoration-2 transition-all flex items-center gap-1"
+          <button
+            onClick={onEnquire}
+            className="text-[#1A73E8] text-xs md:text-sm font-bold hover:underline underline-offset-4 decoration-2 transition-all flex items-center gap-1 cursor-pointer"
           >
             Refer Now
             <svg
@@ -40,7 +44,7 @@ const Navbar = () => {
                 d="M9 5l7 7-7 7"
               />
             </svg>
-          </Link>
+          </button>
         </div>
       </div>
       <div
