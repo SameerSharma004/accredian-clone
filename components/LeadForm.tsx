@@ -66,13 +66,17 @@ const LeadForm = ({ onClose }: LeadFormProps) => {
   };
 
   return (
-    <div className="fixed inset-0 z-100 flex items-center justify-center p-0 sm:p-4 overflow-y-auto">
+    <>
+    <div className="fixed inset-0 z-100 flex items-end sm:items-center justify-center p-0 sm:p-4">
       <div
         className="fixed inset-0 bg-slate-900/60 backdrop-blur-md animate-in fade-in duration-300"
         onClick={onClose}
       />
 
-      <div className="relative w-full max-w-5xl bg-white sm:rounded-4xl shadow-[0_32px_64px_rgba(0,0,0,0.2)] flex flex-col md:flex-row animate-in zoom-in-95 duration-300 min-h-screen sm:min-h-0">
+      <div className="relative w-full max-w-5xl bg-white rounded-t-[2.5rem] sm:rounded-4xl shadow-[0_-12px_64px_rgba(0,0,0,0.15)] sm:shadow-[0_32px_64px_rgba(0,0,0,0.2)] flex flex-col md:flex-row animate-in slide-in-from-bottom-full sm:zoom-in-95 duration-500 max-h-[95vh] sm:max-h-none overflow-y-auto custom-scrollbar">
+        <div className="sm:hidden w-full flex justify-center pt-4 pb-2 shrink-0">
+        </div>
+
         <div className="hidden md:block w-5/12 relative rounded-l-4xl overflow-hidden">
           <Image
             src="/hero-image.png"
@@ -284,6 +288,16 @@ const LeadForm = ({ onClose }: LeadFormProps) => {
         </div>
       </div>
     </div>
+    <style jsx>{`
+      .custom-scrollbar::-webkit-scrollbar {
+        display: none;
+      }
+      .custom-scrollbar {
+        -ms-overflow-style: none; /* IE and Edge */
+        scrollbar-width: none; /* Firefox */
+      }
+    `}</style>
+    </>
   );
 };
 
